@@ -973,26 +973,24 @@
             <input id="search" placeholder="Search dishes, ingredients..." />
           </div>
 
-          <div class="tabs" role="tablist">
            <button class="tab active" data-cat="all">All</button>
-<button class="tab" data-cat="VEG PIZZA">Veg Pizza</button>
-<button class="tab" data-cat="NON VEG PIZZA">Non Veg Pizza</button>
-<button class="tab" data-cat="PIZZA">Pizza</button>
-<button class="tab" data-cat="SANDWICH">Sandwich</button>
-<button class="tab" data-cat="PASTA">Pasta</button>
-<button class="tab" data-cat="FRIES">Fries</button>
-<button class="tab" data-cat="ROLL">Roll</button>
-<button class="tab" data-cat="AARYA SPECIAL NASHTA">Aarya Special Nashta</button>
-<button class="tab" data-cat="MOCKTAILS">Mocktails</button>
-<button class="tab" data-cat="SHAKES">Shakes</button>
-<button class="tab" data-cat="DESSERTS">Desserts</button>
-<button class="tab" data-cat="PLATTERS">Platters</button>
-<button class="tab" data-cat="COMBO">Combo</button>
-<button class="tab" data-cat="MOMOS">Momos</button>
-<button class="tab" data-cat="PLATTER">Platter</button>
-<button class="tab" data-cat="BURGER">Burger</button>
-<button class="tab" data-cat="BREAD">Bread</button>
-          </div>
+    <button class="tab" data-cat="PIZZA">Veg Pizza</button>
+    <button class="tab" data-cat="NON VEG PIZZA">Non Veg Pizza</button>
+    <button class="tab" data-cat="SANDWICH">Sandwich</button>
+    <button class="tab" data-cat="BURGER">Burger</button>
+    <button class="tab" data-cat="PASTA">Pasta</button>
+    <button class="tab" data-cat="MAGGI">Maggi</button>
+    <button class="tab" data-cat="MOMOS">Momos</button>
+    <button class="tab" data-cat="FRIES">Fries</button>
+    <button class="tab" data-cat="ROLL">Roll</button>
+    <button class="tab" data-cat="AARYA SPECIAL NASHTA">Aarya Special</button>
+    <button class="tab" data-cat="MOCKTAILS">Mocktails</button>
+    <button class="tab" data-cat="SHAKES">Shakes</button>
+    <button class="tab" data-cat="BREAD">Bread</button>
+    <button class="tab" data-cat="DESSERTS">Desserts</button>
+    <button class="tab" data-cat="COMBO">Combo</button>
+    <button class="tab" data-cat="PLATTERS">Platters</button>
+    <button class="tab" data-cat="PLATTER">Special Platter</button>
         </div>
       </div>
 
@@ -1056,110 +1054,134 @@
 
   <script>
     const data = [
-    {"id":1,"cat":"VEG PIZZA","name":"हनी कॉर्न पिझ्झा (Honey Corn Pizza)","price":"₹140","desc":"Pizza with honey and corn topping","tags":["Veg","Pizza"],"img":"img/honey-corn-pizza.jpg"},
-{"id":2,"cat":"VEG PIZZA","name":"बेबी कॉर्न पिझ्झा (Baby Corn Pizza)","price":"₹140","desc":"Pizza with baby corn topping","tags":["Veg","Pizza"],"img":"img/baby-corn-pizza.jpg"},
-{"id":3,"cat":"NON VEG PIZZA","name":"प्लेन चिकन पिझ्झा (Plain Chicken Pizza)","price":"₹160","desc":"Plain chicken pizza","tags":["Non-Veg","Pizza"],"img":"img/plain-chicken-pizza.jpg"},
-{"id":4,"cat":"NON VEG PIZZA","name":"चिकन कीमा पिझ्झा (Chicken Keema Pizza)","price":"₹160","desc":"Pizza with minced chicken topping","tags":["Non-Veg","Pizza"],"img":"img/chicken-keema-pizza.jpg"},
-{"id":5,"cat":"NON VEG PIZZA","name":"चिकन टिक्का पिझ्झा (Chicken Tikka Pizza)","price":"₹160","desc":"Pizza with chicken tikka topping","tags":["Non-Veg","Pizza"],"img":"img/chicken-tikka-pizza.jpg"},
-{"id":6,"cat":"NON VEG PIZZA","name":"सिझवान चिकन पिझ्झा (Schezwan Chicken Pizza)","price":"₹160","desc":"Spicy Schezwan chicken pizza","tags":["Non-Veg","Pizza","Spicy"],"img":"img/schezwan-chicken-pizza.jpg"},
-{"id":7,"cat":"NON VEG PIZZA","name":"शेड्डेड चिकन सॅंडविच (Shredded Chicken Sandwich)","price":"₹170","desc":"Sandwich with shredded chicken filling","tags":["Non-Veg","Sandwich"],"img":"img/shredded-chicken-sandwich.jpg"},
-{"id":8,"cat":"SANDWICH","name":"प्लेन सॅंडविच (Plain Sandwich)","price":"₹70","desc":"Plain vegetable sandwich","tags":["Veg","Sandwich"],"img":"img/plain-sandwich.jpg"},
-{"id":9,"cat":"SANDWICH","name":"चॉकलेट सॅंडविच (Chocolate Sandwich)","price":"₹70","desc":"Chocolate filled sandwich","tags":["Veg","Sandwich","Sweet"],"img":"img/chocolate-sandwich.jpg"},
-{"id":10,"cat":"SANDWICH","name":"बॉम्बे मसाला सॅंडविच (Bombay Masala Sandwich)","price":"₹70","desc":"Spicy Bombay style sandwich","tags":["Veg","Sandwich","Spicy"],"img":"img/bombay-masala-sandwich.jpg"},
-{"id":11,"cat":"SANDWICH","name":"मिक्स ग्रिल सॅंडविच (Mix Grill Sandwich)","price":"₹70","desc":"Mixed grill sandwich","tags":["Veg","Sandwich"],"img":"img/mix-grill-sandwich.jpg"},
-{"id":12,"cat":"SANDWICH","name":"क्लब चीज सॅंडविच (Club Cheese Sandwich)","price":"₹70","desc":"Club style cheese sandwich","tags":["Veg","Sandwich"],"img":"img/club-cheese-sandwich.jpg"},
-{"id":13,"cat":"SANDWICH","name":"चिली गार्लिक सॅंडविच (Chilli Garlic Sandwich)","price":"₹70","desc":"Chilli garlic flavored sandwich","tags":["Veg","Sandwich","Spicy"],"img":"img/chilli-garlic-sandwich.jpg"},
-{"id":14,"cat":"SANDWICH","name":"सिझवान सॅंडविच (Schezwan Sandwich)","price":"₹70","desc":"Spicy Schezwan sandwich","tags":["Veg","Sandwich","Spicy"],"img":"img/schezwan-sandwich.jpg"},
-{"id":15,"cat":"SANDWICH","name":"पनीर चिली गार्लिक (Paneer Chilli Garlic)","price":"₹70","desc":"Paneer with chilli garlic","tags":["Veg","Sandwich","Spicy"],"img":"img/paneer-chilli-garlic.jpg"},
-{"id":16,"cat":"SANDWICH","name":"चीज सॅंडविच (Cheese Sandwich)","price":"₹70","desc":"Cheese sandwich","tags":["Veg","Sandwich"],"img":"img/cheese-sandwich.jpg"},
-{"id":17,"cat":"SANDWICH","name":"पनीर सॅंडविच (Paneer Sandwich)","price":"₹70","desc":"Paneer sandwich","tags":["Veg","Sandwich"],"img":"img/paneer-sandwich.jpg"},
-{"id":18,"cat":"SANDWICH","name":"कॉर्न सॅंडविच (Corn Sandwich)","price":"₹70","desc":"Corn sandwich","tags":["Veg","Sandwich"],"img":"img/corn-sandwich.jpg"},
-{"id":19,"cat":"SANDWICH","name":"चिली चीज सॅंडविच (Chilli Cheese Sandwich)","price":"₹70","desc":"Chilli cheese sandwich","tags":["Veg","Sandwich","Spicy"],"img":"img/chilli-cheese-sandwich.jpg"},
-{"id":20,"cat":"SANDWICH","name":"इटालियन सॅंडविच (Italian Sandwich)","price":"₹70","desc":"Italian style sandwich","tags":["Veg","Sandwich"],"img":"img/italian-sandwich.jpg"},
-{"id":21,"cat":"SANDWICH","name":"चिकन सॅंडविच (Chicken Sandwich)","price":"₹90","desc":"Chicken sandwich","tags":["Non-Veg","Sandwich"],"img":"img/chicken-sandwich.jpg"},
+    // MOCKTAILS - ₹40
+    {"id":37,"cat":"MOCKTAILS","name":"व्हर्जिन मोजितो (Virgin Mojito)","price":"₹40","desc":"Refreshing mint lemon mocktail","tags":["Mocktail","Cold"],"img":"img/virgin-mojito.jpg"},
+    {"id":38,"cat":"MOCKTAILS","name":"ब्लू कुराकाओ मोजितो (Blue Curacao Mojito)","price":"₹40","desc":"Blue curacao flavored mojito","tags":["Mocktail","Cold"],"img":"img/blue-curacao-mojito.jpg"},
+    {"id":39,"cat":"MOCKTAILS","name":"वॉटरमेलन मोजितो (Watermelon Mojito)","price":"₹40","desc":"Fresh watermelon mojito","tags":["Mocktail","Cold"],"img":"img/watermelon-mojito.jpg"},
+    {"id":40,"cat":"MOCKTAILS","name":"स्ट्रॉबेरी मोजितो (Strawberry Mojito)","price":"₹40","desc":"Strawberry flavored mojito","tags":["Mocktail","Cold"],"img":"img/strawberry-mojito.jpg"},
+    {"id":41,"cat":"MOCKTAILS","name":"रोज मोजितो (Rose Mojito)","price":"₹40","desc":"Rose flavored refreshing mojito","tags":["Mocktail","Cold"],"img":"img/rose-mojito.jpg"},
+    {"id":42,"cat":"MOCKTAILS","name":"मिंट मोजितो (Mint Mojito)","price":"₹40","desc":"Classic mint mojito","tags":["Mocktail","Cold"],"img":"img/mint-mojito.jpg"},
+    {"id":43,"cat":"MOCKTAILS","name":"कीवी कूलर मॉकटेल (Kiwi Cooler Mocktail)","price":"₹40","desc":"Refreshing kiwi based mocktail","tags":["Mocktail","Cold"],"img":"img/kiwi-cooler.jpg"},
+    {"id":44,"cat":"MOCKTAILS","name":"ब्लूबेरी मॉकटेल (Blueberry Mocktail)","price":"₹40","desc":"Blueberry flavored mocktail","tags":["Mocktail","Cold"],"img":"img/blueberry-mocktail.jpg"},
+    {"id":45,"cat":"MOCKTAILS","name":"ग्रीन एप्पल मॉकटेल (Green Apple Mocktail)","price":"₹40","desc":"Green apple flavored mocktail","tags":["Mocktail","Cold"],"img":"img/green-apple-mocktail.jpg"},
+    {"id":46,"cat":"MOCKTAILS","name":"क्रॅनबेरी मॉकटेल (Cranberry Mocktail)","price":"₹40","desc":"Cranberry based mocktail","tags":["Mocktail","Cold"],"img":"img/cranberry-mocktail.jpg"},
+    {"id":47,"cat":"MOCKTAILS","name":"कोल्ड कॉफी (Cold Coffee)","price":"₹40","desc":"Chilled coffee beverage","tags":["Cold","Coffee"],"img":"img/cold-coffee.jpg"},
+
+    // SHAKES - ₹50
+    {"id":48,"cat":"SHAKES","name":"चॉकलेट शेक (Chocolate Shake)","price":"₹50","desc":"Rich chocolate milkshake","tags":["Shake","Cold"],"img":"img/chocolate-shake.jpg"},
+    {"id":49,"cat":"SHAKES","name":"गुलाब गुलकंद शेक (Gulab Gulkand Shake)","price":"₹50","desc":"Rose and gulkand flavored shake","tags":["Shake","Cold"],"img":"img/gulab-gulkand-shake.jpg"},
+    {"id":50,"cat":"SHAKES","name":"ग्रीन एप्पल शेक (Green Apple Shake)","price":"₹50","desc":"Green apple flavored milkshake","tags":["Shake","Cold"],"img":"img/green-apple-shake.jpg"},
+    {"id":51,"cat":"SHAKES","name":"रोज शेक (Rose Shake)","price":"₹50","desc":"Rose flavored milkshake","tags":["Shake","Cold"],"img":"img/rose-shake.jpg"},
+    {"id":52,"cat":"SHAKES","name":"स्ट्रॉबेरी शेक (Strawberry Shake)","price":"₹50","desc":"Strawberry milkshake","tags":["Shake","Cold"],"img":"img/strawberry-shake.jpg"},
+    {"id":53,"cat":"SHAKES","name":"वॉटरमेलन शेक (Watermelon Shake)","price":"₹50","desc":"Watermelon flavored shake","tags":["Shake","Cold"],"img":"img/watermelon-shake.jpg"},
+    {"id":54,"cat":"SHAKES","name":"कीवी शेक (Kiwi Shake)","price":"₹50","desc":"Kiwi fruit milkshake","tags":["Shake","Cold"],"img":"img/kiwi-shake.jpg"},
+    {"id":55,"cat":"SHAKES","name":"ओरियो मिल्कशेक (Oreo Milkshake)","price":"₹50","desc":"Oreo cookie milkshake","tags":["Shake","Cold"],"img":"img/oreo-milkshake.jpg"},
+    {"id":56,"cat":"SHAKES","name":"ब्लूबेरी मिल्कशेक (Blueberry Milkshake)","price":"₹50","desc":"Blueberry flavored milkshake","tags":["Shake","Cold"],"img":"img/blueberry-milkshake.jpg"},
+
+    // FRIES - ₹60-₹70
+    {"id":24,"cat":"FRIES","name":"प्लेन सॉल्टेड फ्राइज (Plain Salted Fries)","price":"₹60","desc":"Plain salted french fries","tags":["Veg","Fries"],"img":"img/plain-fries.jpg"},
+    {"id":25,"cat":"FRIES","name":"मसालेदार फ्राइज (Masaledar Fries)","price":"₹60","desc":"Spicy masala french fries","tags":["Veg","Fries","Spicy"],"img":"img/masaledar-fries.jpg"},
+    {"id":26,"cat":"FRIES","name":"मस्टर्ड फ्राइज (Mustard Fries)","price":"₹60","desc":"French fries with mustard flavor","tags":["Veg","Fries"],"img":"img/mustard-fries.jpg"},
+    {"id":27,"cat":"FRIES","name":"पेरी पेरी फ्राइज (Peri Peri Fries)","price":"₹60","desc":"Spicy peri peri french fries","tags":["Veg","Fries","Spicy"],"img":"img/peri-peri-fries.jpg"},
+    {"id":28,"cat":"FRIES","name":"चीजी फ्राइज (Cheesy Fries)","price":"₹70","desc":"French fries with cheese","tags":["Veg","Fries"],"img":"img/cheesy-fries.jpg"},
+
+    // ROLL - ₹60-₹70
+    {"id":29,"cat":"ROLL","name":"सिझवान रोल (Schezwan Roll)","price":"₹60","desc":"Spicy Schezwan flavored roll","tags":["Veg","Roll","Spicy"],"img":"img/schezwan-roll.jpg"},
+    {"id":30,"cat":"ROLL","name":"मिक्स वेज रोल (Mix Veg Roll)","price":"₹60","desc":"Mixed vegetable roll","tags":["Veg","Roll"],"img":"img/mix-veg-roll.jpg"},
+    {"id":31,"cat":"ROLL","name":"पनीर रोल (Paneer Roll)","price":"₹60","desc":"Paneer filled roll","tags":["Veg","Roll"],"img":"img/paneer-roll.jpg"},
+    {"id":32,"cat":"ROLL","name":"चिकन रोल (Chicken Roll)","price":"₹70","desc":"Chicken filled roll","tags":["Non-Veg","Roll"],"img":"img/chicken-roll.jpg"},
+    {"id":33,"cat":"ROLL","name":"चिकन चीज रोल (Chicken Cheese Roll)","price":"₹70","desc":"Chicken and cheese roll","tags":["Non-Veg","Roll"],"img":"img/chicken-cheese-roll.jpg"},
+    {"id":34,"cat":"ROLL","name":"चिकन कीमा रोल (Chicken Keema Roll)","price":"₹70","desc":"Minced chicken roll","tags":["Non-Veg","Roll"],"img":"img/chicken-keema-roll.jpg"},
+
+    // AARYA SPECIAL NASHTA - ₹60-₹70
+    {"id":35,"cat":"AARYA SPECIAL NASHTA","name":"पाव भाजी (Pav Bhaji)","price":"₹60","desc":"Spicy vegetable mash with bread","tags":["Veg","Snacks","Spicy"],"img":"img/pav-bhaji.jpg"},
+    {"id":36,"cat":"AARYA SPECIAL NASHTA","name":"मिसळ पाव (Misal Pav)","price":"₹70","desc":"Spicy sprouted beans curry with bread","tags":["Veg","Snacks","Spicy"],"img":"img/misal-pav.jpg"},
+
+    // BREAD - ₹60
+    {"id":95,"cat":"BREAD","name":"पनीर गार्लिक ब्रेड (Paneer Garlic Bread)","price":"₹60","desc":"Buttery garlic bread","tags":["Veg","Bread"],"img":"img/Paneer-garlic-bread.jpg"},
+
+    // BURGER - ₹60-₹100
+    {"id":86,"cat":"BURGER","name":"आलू टिक्की बर्गर (Aloo Tikki Burger)","price":"₹60","desc":"Potato patty burger","tags":["Veg","Burger"],"img":"img/aloo-tikki-burger.jpg"},
+    {"id":87,"cat":"BURGER","name":"स्पायसी चीज बर्गर (Spicy Cheese Burger)","price":"₹60","desc":"Spicy cheese burger","tags":["Veg","Burger","Spicy"],"img":"img/spicy-cheese-burger.jpg"},
+    {"id":88,"cat":"BURGER","name":"वेज चीज बर्गर (Veg Cheese Burger)","price":"₹70","desc":"Vegetable cheese burger","tags":["Veg","Burger"],"img":"img/veg-cheese-burger.jpg"},
+    {"id":89,"cat":"BURGER","name":"सिझवान बर्गर (Schezwan Burger)","price":"₹70","desc":"Spicy Schezwan burger","tags":["Veg","Burger","Spicy"],"img":"img/schezwan-burger.jpg"},
+    {"id":92,"cat":"BURGER","name":"चिली चीज बर्गर (Chilli Cheese Burger)","price":"₹80","desc":"Chilli cheese burger","tags":["Veg","Burger","Spicy"],"img":"img/chilli-cheese-burger.jpg"},
+    {"id":94,"cat":"BURGER","name":"पनीर चीज बर्गर (Paneer Cheese Burger)","price":"₹90","desc":"Paneer cheese burger","tags":["Veg","Burger"],"img":"img/paneer-cheese-burger.jpg"},
+    {"id":91,"cat":"BURGER","name":"वेज डबल चीज बर्गर (Veg Double Cheese Burger)","price":"₹80","desc":"Double cheese veg burger","tags":["Veg","Burger"],"img":"img/veg-double-cheese-burger.jpg"},
+    {"id":90,"cat":"BURGER","name":"चिकन बर्गर (Chicken Burger)","price":"₹80","desc":"Chicken burger","tags":["Non-Veg","Burger"],"img":"img/chicken-burger.jpg"},
+    {"id":93,"cat":"BURGER","name":"चिकन डबल चीज बर्गर (Chicken Double Cheese Burger)","price":"₹90","desc":"Double cheese chicken burger","tags":["Non-Veg","Burger"],"img":"img/chicken-double-cheese-burger.jpg"},
+
+    // SANDWICH - ₹70-₹90
+    {"id":8,"cat":"SANDWICH","name":"प्लेन सॅंडविच (Plain Sandwich)","price":"₹70","desc":"Plain vegetable sandwich","tags":["Veg","Sandwich"],"img":"img/plain-sandwich.jpg"},
+    {"id":9,"cat":"SANDWICH","name":"चॉकलेट सॅंडविच (Chocolate Sandwich)","price":"₹70","desc":"Chocolate filled sandwich","tags":["Veg","Sandwich","Sweet"],"img":"img/chocolate-sandwich.jpg"},
+    {"id":10,"cat":"SANDWICH","name":"बॉम्बे मसाला सॅंडविच (Bombay Masala Sandwich)","price":"₹70","desc":"Spicy Bombay style sandwich","tags":["Veg","Sandwich","Spicy"],"img":"img/bombay-masala-sandwich.jpg"},
+    {"id":11,"cat":"SANDWICH","name":"मिक्स ग्रिल सॅंडविच (Mix Grill Sandwich)","price":"₹70","desc":"Mixed grill sandwich","tags":["Veg","Sandwich"],"img":"img/mix-grill-sandwich.jpg"},
+    {"id":12,"cat":"SANDWICH","name":"क्लब चीज सॅंडविच (Club Cheese Sandwich)","price":"₹70","desc":"Club style cheese sandwich","tags":["Veg","Sandwich"],"img":"img/club-cheese-sandwich.jpg"},
+    {"id":13,"cat":"SANDWICH","name":"चिली गार्लिक सॅंडविच (Chilli Garlic Sandwich)","price":"₹70","desc":"Chilli garlic flavored sandwich","tags":["Veg","Sandwich","Spicy"],"img":"img/chilli-garlic-sandwich.jpg"},
+    {"id":14,"cat":"SANDWICH","name":"सिझवान सॅंडविच (Schezwan Sandwich)","price":"₹70","desc":"Spicy Schezwan sandwich","tags":["Veg","Sandwich","Spicy"],"img":"img/schezwan-sandwich.jpg"},
+    {"id":15,"cat":"SANDWICH","name":"पनीर चिली गार्लिक (Paneer Chilli Garlic)","price":"₹70","desc":"Paneer with chilli garlic","tags":["Veg","Sandwich","Spicy"],"img":"img/paneer-chilli-garlic.jpg"},
+    {"id":16,"cat":"SANDWICH","name":"चीज सॅंडविच (Cheese Sandwich)","price":"₹70","desc":"Cheese sandwich","tags":["Veg","Sandwich"],"img":"img/cheese-sandwich.jpg"},
+    {"id":17,"cat":"SANDWICH","name":"पनीर सॅंडविच (Paneer Sandwich)","price":"₹70","desc":"Paneer sandwich","tags":["Veg","Sandwich"],"img":"img/paneer-sandwich.jpg"},
+    {"id":18,"cat":"SANDWICH","name":"कॉर्न सॅंडविच (Corn Sandwich)","price":"₹70","desc":"Corn sandwich","tags":["Veg","Sandwich"],"img":"img/corn-sandwich.jpg"},
+    {"id":19,"cat":"SANDWICH","name":"चिली चीज सॅंडविच (Chilli Cheese Sandwich)","price":"₹70","desc":"Chilli cheese sandwich","tags":["Veg","Sandwich","Spicy"],"img":"img/chilli-cheese-sandwich.jpg"},
+    {"id":20,"cat":"SANDWICH","name":"इटालियन सॅंडविच (Italian Sandwich)","price":"₹70","desc":"Italian style sandwich","tags":["Veg","Sandwich"],"img":"img/italian-sandwich.jpg"},
+    {"id":21,"cat":"SANDWICH","name":"चिकन सॅंडविच (Chicken Sandwich)","price":"₹90","desc":"Chicken sandwich","tags":["Non-Veg","Sandwich"],"img":"img/chicken-sandwich.jpg"},
+
+    // PASTA - ₹70
+    {"id":22,"cat":"PASTA","name":"रेड सॉस पास्ता (Red Sauce Pasta)","price":"₹70","desc":"Pasta in red tomato sauce","tags":["Veg","Pasta"],"img":"img/red-sauce-pasta.jpg"},
+    {"id":23,"cat":"PASTA","name":"पेरी पेरी पास्ता (Peri Peri Pasta)","price":"₹70","desc":"Spicy peri peri flavored pasta","tags":["Veg","Pasta","Spicy"],"img":"img/peri-peri-pasta.jpg"},
+
+    // PIZZA - ₹110-₹140 (Veg Pizza only)
+    {"id":60,"cat":"PIZZA","name":"प्लेन चीज पिझ्झा (Plain Cheese Pizza)","price":"₹110","desc":"Classic cheese pizza","tags":["Veg","Pizza"],"img":"img/plain-cheese-pizza.jpg"},
+    {"id":61,"cat":"PIZZA","name":"कॉर्न चीज पिझ्झा (Corn Cheese Pizza)","price":"₹110","desc":"Corn and cheese pizza","tags":["Veg","Pizza"],"img":"img/corn-cheese-pizza.jpg"},
+    {"id":62,"cat":"PIZZA","name":"क्लासिक ओनियन पिझ्झा (Classic Onion Pizza)","price":"₹110","desc":"Classic onion pizza","tags":["Veg","Pizza"],"img":"img/classic-onion-pizza.jpg"},
+    {"id":63,"cat":"PIZZA","name":"क्लासिक टोमॅटो पिझ्झा (Classic Tomato Pizza)","price":"₹110","desc":"Classic tomato pizza","tags":["Veg","Pizza"],"img":"img/classic-tomato-pizza.jpg"},
+    {"id":64,"cat":"PIZZA","name":"वेज चीज पिझ्झा (Veg Cheese Pizza)","price":"₹110","desc":"Vegetable cheese pizza","tags":["Veg","Pizza"],"img":"img/veg-cheese-pizza.jpg"},
+    {"id":65,"cat":"PIZZA","name":"वेज डिलाइट पिझ्झा (Veg Delight Pizza)","price":"₹120","desc":"Delightful vegetable pizza","tags":["Veg","Pizza"],"img":"img/veg-delight-pizza.jpg"},
+    {"id":66,"cat":"PIZZA","name":"वेजी लव्हर्स पिझ्झा (Veggie Lovers Pizza)","price":"₹120","desc":"Pizza for vegetable lovers","tags":["Veg","Pizza"],"img":"img/veggie-lovers-pizza.jpg"},
+    {"id":1,"cat":"PIZZA","name":"हनी कॉर्न पिझ्झा (Honey Corn Pizza)","price":"₹140","desc":"Pizza with honey and corn topping","tags":["Veg","Pizza"],"img":"img/honey-corn-pizza.jpg"},
+    {"id":2,"cat":"PIZZA","name":"बेबी कॉर्न पिझ्झा (Baby Corn Pizza)","price":"₹140","desc":"Pizza with baby corn topping","tags":["Veg","Pizza"],"img":"img/baby-corn-pizza.jpg"},
+    {"id":67,"cat":"PIZZA","name":"पनीर पिझ्झा (Paneer Pizza)","price":"₹140","desc":"Paneer topped pizza","tags":["Veg","Pizza"],"img":"img/paneer-pizza.jpg"},
+    {"id":68,"cat":"PIZZA","name":"पेरी पेरी पनीर पिझ्झा (Peri Peri Paneer Pizza)","price":"₹140","desc":"Spicy peri peri paneer pizza","tags":["Veg","Pizza","Spicy"],"img":"img/peri-peri-paneer-pizza.jpg"},
+    {"id":69,"cat":"PIZZA","name":"तंदूरी पनीर पिझ्झा (Tandoori Paneer Pizza)","price":"₹140","desc":"Tandoori style paneer pizza","tags":["Veg","Pizza"],"img":"img/tandoori-paneer-pizza.jpg"},
+    {"id":70,"cat":"PIZZA","name":"माखनी पनीर पिझ्झा (Makhani Paneer Pizza)","price":"₹140","desc":"Buttery paneer pizza","tags":["Veg","Pizza"],"img":"img/makhani-paneer-pizza.jpg"},
+    {"id":71,"cat":"PIZZA","name":"सिझवान पनीर पिझ्झा (Schezwan Paneer Pizza)","price":"₹140","desc":"Spicy Schezwan paneer pizza","tags":["Veg","Pizza","Spicy"],"img":"img/schezwan-paneer-pizza.jpg"},
+    {"id":72,"cat":"PIZZA","name":"मिक्स वेज डिलाइट पिझ्झा (Mix Veg Delight Pizza)","price":"₹140","desc":"Mixed vegetable delight pizza","tags":["Veg","Pizza"],"img":"img/mix-veg-delight-pizza.jpg"},
+    {"id":73,"cat":"PIZZA","name":"चीज बर्स्ट वेज पिझ्झा (Cheese Burst Veg Pizza)","price":"₹140","desc":"Cheese burst vegetable pizza","tags":["Veg","Pizza"],"img":"img/cheese-burst-veg-pizza.jpg"},
+    {"id":74,"cat":"PIZZA","name":"डबल चीज बर्स्ट वेज पिझ्झा (Double Cheese Burst Veg Pizza)","price":"₹140","desc":"Double cheese burst vegetable pizza","tags":["Veg","Pizza"],"img":"img/double-cheese-burst-veg-pizza.jpg"},
+    {"id":75,"cat":"PIZZA","name":"चटपटा पिझ्झा (Chatpata Pizza)","price":"₹140","desc":"Tangy and spicy pizza","tags":["Veg","Pizza","Spicy"],"img":"img/chatpata-pizza.jpg"},
+    {"id":76,"cat":"PIZZA","name":"चिली चीज गार्लिक पिझ्झा (Chilli Cheese Garlic Pizza)","price":"₹140","desc":"Chilli cheese garlic flavored pizza","tags":["Veg","Pizza","Spicy"],"img":"img/chilli-cheese-garlic-pizza.jpg"},
+    {"id":77,"cat":"PIZZA","name":"गार्लिक पनीर पिझ्झा (Garlic Paneer Pizza)","price":"₹140","desc":"Garlic flavored paneer pizza","tags":["Veg","Pizza"],"img":"img/garlic-paneer-pizza.jpg"},
+    {"id":78,"cat":"PIZZA","name":"चिली चीज पिझ्झा (Chilli Cheese Pizza)","price":"₹140","desc":"Spicy chilli cheese pizza","tags":["Veg","Pizza","Spicy"],"img":"img/chilli-cheese-pizza.jpg"},
+    {"id":79,"cat":"PIZZA","name":"इटालियन पिझ्झा (Italian Pizza)","price":"₹140","desc":"Italian style pizza","tags":["Veg","Pizza"],"img":"img/italian-pizza.jpg"},
+
+    // NON VEG PIZZA - ₹160-₹170
+    {"id":3,"cat":"NON VEG PIZZA","name":"प्लेन चिकन पिझ्झा (Plain Chicken Pizza)","price":"₹160","desc":"Plain chicken pizza","tags":["Non-Veg","Pizza"],"img":"img/plain-chicken-pizza.jpg"},
+    {"id":4,"cat":"NON VEG PIZZA","name":"चिकन कीमा पिझ्झा (Chicken Keema Pizza)","price":"₹160","desc":"Pizza with minced chicken topping","tags":["Non-Veg","Pizza"],"img":"img/chicken-keema-pizza.jpg"},
+    {"id":5,"cat":"NON VEG PIZZA","name":"चिकन टिक्का पिझ्झा (Chicken Tikka Pizza)","price":"₹160","desc":"Pizza with chicken tikka topping","tags":["Non-Veg","Pizza"],"img":"img/chicken-tikka-pizza.jpg"},
+    {"id":6,"cat":"NON VEG PIZZA","name":"सिझवान चिकन पिझ्झा (Schezwan Chicken Pizza)","price":"₹160","desc":"Spicy Schezwan chicken pizza","tags":["Non-Veg","Pizza","Spicy"],"img":"img/schezwan-chicken-pizza.jpg"},
+    {"id":7,"cat":"NON VEG PIZZA","name":"शेड्डेड चिकन सॅंडविच (Shredded Chicken Sandwich)","price":"₹170","desc":"Sandwich with shredded chicken filling","tags":["Non-Veg","Sandwich"],"img":"img/shredded-chicken-sandwich.jpg"},
+
+    // COMBO & PLATTERS - ₹140-₹275
+    {"id":59,"cat":"COMBO","name":"आर्या स्पेशल कॉम्बो (Aarya Special Combo)","price":"₹140","desc":"Burger and sandwich combo","tags":["Combo"],"img":"img/aarya-special-combo.jpg"},
+    {"id":58,"cat":"PLATTERS","name":"मोनोस प्लॅटर (Monos Platter)","price":"₹150","desc":"Assorted snack platter","tags":["Platter","Snacks"],"img":"img/monos-platter.jpg"},
+    {"id":57,"cat":"DESSERTS","name":"सिझलिंग ब्राउनी (Sizzling Brownie)","price":"₹150","desc":"Hot sizzling brownie with ice cream","tags":["Dessert","Sweet"],"img":"img/sizzling-brownie.jpg"},
+    {"id":80,"cat":"MOMOS","name":"वेज चीज मोमोज (Veg Cheese Momos)","price":"₹80","desc":"Steamed veg cheese momos","tags":["Veg","Momos"],"img":"img/veg-cheese-momos.jpg"},
+    {"id":81,"cat":"MOMOS","name":"वेज पेरी पेरी मोमोज (Veg Peri Peri Momos)","price":"₹90","desc":"Spicy peri peri veg momos","tags":["Veg","Momos","Spicy"],"img":"img/veg-peri-peri-momos.jpg"},
+    {"id":82,"cat":"MOMOS","name":"कॉर्न चीज मोमोज (Corn Cheese Momos)","price":"₹110","desc":"Corn and cheese momos","tags":["Veg","Momos"],"img":"img/corn-cheese-momos.jpg"},
+    {"id":83,"cat":"MOMOS","name":"पनीर चीज मोमोज (Paneer Cheese Momos)","price":"₹110","desc":"Paneer and cheese momos","tags":["Veg","Momos"],"img":"img/paneer-cheese-momos.jpg"},
+    {"id":84,"cat":"MOMOS","name":"चिकन चीज मोमोज (Chicken Cheese Momos)","price":"₹110","desc":"Chicken cheese momos","tags":["Non-Veg","Momos"],"img":"img/chicken-cheese-momos.jpg"},
+    {"id":85,"cat":"PLATTER","name":"आर्या प्लॅटर (Aarya Platter)","price":"₹275","desc":"Special momos platter","tags":["Platter","Momos"],"img":"img/aarya-platter.jpg"},
 
 
-{"id":22,"cat":"PASTA","name":"रेड सॉस पास्ता (Red Sauce Pasta)","price":"₹70","desc":"Pasta in red tomato sauce","tags":["Veg","Pasta"],"img":"img/red-sauce-pasta.jpg"},
-{"id":23,"cat":"PASTA","name":"पेरी पेरी पास्ता (Peri Peri Pasta)","price":"₹70","desc":"Spicy peri peri flavored pasta","tags":["Veg","Pasta","Spicy"],"img":"img/peri-peri-pasta.jpg"},
-{"id":24,"cat":"FRIES","name":"प्लेन सॉल्टेड फ्राइज (Plain Salted Fries)","price":"₹60","desc":"Plain salted french fries","tags":["Veg","Fries"],"img":"img/plain-fries.jpg"},
-{"id":25,"cat":"FRIES","name":"मसालेदार फ्राइज (Masaledar Fries)","price":"₹60","desc":"Spicy masala french fries","tags":["Veg","Fries","Spicy"],"img":"img/masaledar-fries.jpg"},
-{"id":26,"cat":"FRIES","name":"मस्टर्ड फ्राइज (Mustard Fries)","price":"₹60","desc":"French fries with mustard flavor","tags":["Veg","Fries"],"img":"img/mustard-fries.jpg"},
-{"id":27,"cat":"FRIES","name":"पेरी पेरी फ्राइज (Peri Peri Fries)","price":"₹60","desc":"Spicy peri peri french fries","tags":["Veg","Fries","Spicy"],"img":"img/peri-peri-fries.jpg"},
-{"id":28,"cat":"FRIES","name":"चीजी फ्राइज (Cheesy Fries)","price":"₹70","desc":"French fries with cheese","tags":["Veg","Fries"],"img":"img/cheesy-fries.jpg"},
-{"id":29,"cat":"ROLL","name":"सिझवान रोल (Schezwan Roll)","price":"₹60","desc":"Spicy Schezwan flavored roll","tags":["Veg","Roll","Spicy"],"img":"img/schezwan-roll.jpg"},
-{"id":30,"cat":"ROLL","name":"मिक्स वेज रोल (Mix Veg Roll)","price":"₹60","desc":"Mixed vegetable roll","tags":["Veg","Roll"],"img":"img/mix-veg-roll.jpg"},
-{"id":31,"cat":"ROLL","name":"पनीर रोल (Paneer Roll)","price":"₹60","desc":"Paneer filled roll","tags":["Veg","Roll"],"img":"img/paneer-roll.jpg"},
-{"id":32,"cat":"ROLL","name":"चिकन रोल (Chicken Roll)","price":"₹70","desc":"Chicken filled roll","tags":["Non-Veg","Roll"],"img":"img/chicken-roll.jpg"},
-{"id":33,"cat":"ROLL","name":"चिकन चीज रोल (Chicken Cheese Roll)","price":"₹70","desc":"Chicken and cheese roll","tags":["Non-Veg","Roll"],"img":"img/chicken-cheese-roll.jpg"},
-{"id":34,"cat":"ROLL","name":"चिकन कीमा रोल (Chicken Keema Roll)","price":"₹70","desc":"Minced chicken roll","tags":["Non-Veg","Roll"],"img":"img/chicken-keema-roll.jpg"},
-{"id":35,"cat":"AARYA SPECIAL NASHTA","name":"पाव भाजी (Pav Bhaji)","price":"₹60","desc":"Spicy vegetable mash with bread","tags":["Veg","Snacks","Spicy"],"img":"img/pav-bhaji.jpg"},
-{"id":36,"cat":"AARYA SPECIAL NASHTA","name":"मिसळ पाव (Misal Pav)","price":"₹70","desc":"Spicy sprouted beans curry with bread","tags":["Veg","Snacks","Spicy"],"img":"img/misal-pav.jpg"},
-  
-{"id":37,"cat":"MOCKTAILS","name":"व्हर्जिन मोजितो (Virgin Mojito)","price":"₹40","desc":"Refreshing mint lemon mocktail","tags":["Mocktail","Cold"],"img":"img/virgin-mojito.jpg"},
-{"id":38,"cat":"MOCKTAILS","name":"ब्लू कुराकाओ मोजितो (Blue Curacao Mojito)","price":"₹40","desc":"Blue curacao flavored mojito","tags":["Mocktail","Cold"],"img":"img/blue-curacao-mojito.jpg"},
-{"id":39,"cat":"MOCKTAILS","name":"वॉटरमेलन मोजितो (Watermelon Mojito)","price":"₹40","desc":"Fresh watermelon mojito","tags":["Mocktail","Cold"],"img":"img/watermelon-mojito.jpg"},
-{"id":40,"cat":"MOCKTAILS","name":"स्ट्रॉबेरी मोजितो (Strawberry Mojito)","price":"₹40","desc":"Strawberry flavored mojito","tags":["Mocktail","Cold"],"img":"img/strawberry-mojito.jpg"},
-{"id":41,"cat":"MOCKTAILS","name":"रोज मोजितो (Rose Mojito)","price":"₹40","desc":"Rose flavored refreshing mojito","tags":["Mocktail","Cold"],"img":"img/rose-mojito.jpg"},
-{"id":42,"cat":"MOCKTAILS","name":"मिंट मोजितो (Mint Mojito)","price":"₹40","desc":"Classic mint mojito","tags":["Mocktail","Cold"],"img":"img/mint-mojito.jpg"},
-{"id":43,"cat":"MOCKTAILS","name":"कीवी कूलर मॉकटेल (Kiwi Cooler Mocktail)","price":"₹40","desc":"Refreshing kiwi based mocktail","tags":["Mocktail","Cold"],"img":"img/kiwi-cooler.jpg"},
-{"id":44,"cat":"MOCKTAILS","name":"ब्लूबेरी मॉकटेल (Blueberry Mocktail)","price":"₹40","desc":"Blueberry flavored mocktail","tags":["Mocktail","Cold"],"img":"img/blueberry-mocktail.jpg"},
-{"id":45,"cat":"MOCKTAILS","name":"ग्रीन एप्पल मॉकटेल (Green Apple Mocktail)","price":"₹40","desc":"Green apple flavored mocktail","tags":["Mocktail","Cold"],"img":"img/green-apple-mocktail.jpg"},
-{"id":46,"cat":"MOCKTAILS","name":"क्रॅनबेरी मॉकटेल (Cranberry Mocktail)","price":"₹40","desc":"Cranberry based mocktail","tags":["Mocktail","Cold"],"img":"img/cranberry-mocktail.jpg"},
-{"id":47,"cat":"MOCKTAILS","name":"कोल्ड कॉफी (Cold Coffee)","price":"₹40","desc":"Chilled coffee beverage","tags":["Cold","Coffee"],"img":"img/cold-coffee.jpg"},
-{"id":48,"cat":"SHAKES","name":"चॉकलेट शेक (Chocolate Shake)","price":"₹50","desc":"Rich chocolate milkshake","tags":["Shake","Cold"],"img":"img/chocolate-shake.jpg"},
-{"id":49,"cat":"SHAKES","name":"गुलाब गुलकंद शेक (Gulab Gulkand Shake)","price":"₹50","desc":"Rose and gulkand flavored shake","tags":["Shake","Cold"],"img":"img/gulab-gulkand-shake.jpg"},
-{"id":50,"cat":"SHAKES","name":"ग्रीन एप्पल शेक (Green Apple Shake)","price":"₹50","desc":"Green apple flavored milkshake","tags":["Shake","Cold"],"img":"img/green-apple-shake.jpg"},
-{"id":51,"cat":"SHAKES","name":"रोज शेक (Rose Shake)","price":"₹50","desc":"Rose flavored milkshake","tags":["Shake","Cold"],"img":"img/rose-shake.jpg"},
-{"id":52,"cat":"SHAKES","name":"स्ट्रॉबेरी शेक (Strawberry Shake)","price":"₹50","desc":"Strawberry milkshake","tags":["Shake","Cold"],"img":"img/strawberry-shake.jpg"},
-{"id":53,"cat":"SHAKES","name":"वॉटरमेलन शेक (Watermelon Shake)","price":"₹50","desc":"Watermelon flavored shake","tags":["Shake","Cold"],"img":"img/watermelon-shake.jpg"},
-{"id":54,"cat":"SHAKES","name":"कीवी शेक (Kiwi Shake)","price":"₹50","desc":"Kiwi fruit milkshake","tags":["Shake","Cold"],"img":"img/kiwi-shake.jpg"},
-{"id":55,"cat":"SHAKES","name":"ओरियो मिल्कशेक (Oreo Milkshake)","price":"₹50","desc":"Oreo cookie milkshake","tags":["Shake","Cold"],"img":"img/oreo-milkshake.jpg"},
-{"id":56,"cat":"SHAKES","name":"ब्लूबेरी मिल्कशेक (Blueberry Milkshake)","price":"₹50","desc":"Blueberry flavored milkshake","tags":["Shake","Cold"],"img":"img/blueberry-milkshake.jpg"},
-{"id":57,"cat":"DESSERTS","name":"सिझलिंग ब्राउनी (Sizzling Brownie)","price":"₹150","desc":"Hot sizzling brownie with ice cream","tags":["Dessert","Sweet"],"img":"img/sizzling-brownie.jpg"},
-{"id":58,"cat":"PLATTERS","name":"मोनोस प्लॅटर (Monos Platter)","price":"₹150","desc":"Assorted snack platter","tags":["Platter","Snacks"],"img":"img/monos-platter.jpg"},
-{"id":59,"cat":"COMBO","name":"आर्या स्पेशल कॉम्बो (Aarya Special Combo)","price":"₹140","desc":"Burger and sandwich combo","tags":["Combo"],"img":"img/aarya-special-combo.jpg"},
+    // MAGGI - ₹40-₹70
+    {"id":96,"cat":"MAGGI","name":"प्लेन मैगी (Plain Maggi)","price":"₹40","desc":"Plain maggi noodles","tags":["Veg","Maggi"],"img":"img/plain-maggi.jpg"},
+    {"id":97,"cat":"MAGGI","name":"कॉर्न मैगी (Corn Maggi)","price":"₹50","desc":"Maggi with corn","tags":["Veg","Maggi"],"img":"img/corn-maggi.jpg"},
+    {"id":98,"cat":"MAGGI","name":"चीज मसाला मैगी (Cheese Masala Maggi)","price":"₹60","desc":"Maggi with cheese and masala","tags":["Veg","Maggi"],"img":"img/cheese-masala-maggi.jpg"},
+    {"id":99,"cat":"MAGGI","name":"शेजवान मैगी (Schezwan Maggi)","price":"₹60","desc":"Spicy schezwan maggi","tags":["Veg","Maggi","Spicy"],"img":"img/schezwan-maggi.jpg"},
+    {"id":100,"cat":"MAGGI","name":"पनीर चीज मैगी (Paneer Cheese Maggi)","price":"₹70","desc":"Maggi with paneer and cheese","tags":["Veg","Maggi"],"img":"img/paneer-cheese-maggi.jpg"},
 
-{"id":60,"cat":"PIZZA","name":"प्लेन चीज पिझ्झा (Plain Cheese Pizza)","price":"₹110","desc":"Classic cheese pizza","tags":["Veg","Pizza"],"img":"img/plain-cheese-pizza.jpg"},
-{"id":61,"cat":"PIZZA","name":"कॉर्न चीज पिझ्झा (Corn Cheese Pizza)","price":"₹110","desc":"Corn and cheese pizza","tags":["Veg","Pizza"],"img":"img/corn-cheese-pizza.jpg"},
-{"id":62,"cat":"PIZZA","name":"क्लासिक ओनियन पिझ्झा (Classic Onion Pizza)","price":"₹110","desc":"Classic onion pizza","tags":["Veg","Pizza"],"img":"img/classic-onion-pizza.jpg"},
-{"id":63,"cat":"PIZZA","name":"क्लासिक टोमॅटो पिझ्झा (Classic Tomato Pizza)","price":"₹110","desc":"Classic tomato pizza","tags":["Veg","Pizza"],"img":"img/classic-tomato-pizza.jpg"},
-{"id":64,"cat":"PIZZA","name":"वेज चीज पिझ्झा (Veg Cheese Pizza)","price":"₹110","desc":"Vegetable cheese pizza","tags":["Veg","Pizza"],"img":"img/veg-cheese-pizza.jpg"},
-{"id":65,"cat":"PIZZA","name":"वेज डिलाइट पिझ्झा (Veg Delight Pizza)","price":"₹120","desc":"Delightful vegetable pizza","tags":["Veg","Pizza"],"img":"img/veg-delight-pizza.jpg"},
-{"id":66,"cat":"PIZZA","name":"वेजी लव्हर्स पिझ्झा (Veggie Lovers Pizza)","price":"₹120","desc":"Pizza for vegetable lovers","tags":["Veg","Pizza"],"img":"img/veggie-lovers-pizza.jpg"},
-{"id":67,"cat":"PIZZA","name":"पनीर पिझ्झा (Paneer Pizza)","price":"₹140","desc":"Paneer topped pizza","tags":["Veg","Pizza"],"img":"img/paneer-pizza.jpg"},
-{"id":68,"cat":"PIZZA","name":"पेरी पेरी पनीर पिझ्झा (Peri Peri Paneer Pizza)","price":"₹140","desc":"Spicy peri peri paneer pizza","tags":["Veg","Pizza","Spicy"],"img":"img/peri-peri-paneer-pizza.jpg"},
-{"id":69,"cat":"PIZZA","name":"तंदूरी पनीर पिझ्झा (Tandoori Paneer Pizza)","price":"₹140","desc":"Tandoori style paneer pizza","tags":["Veg","Pizza"],"img":"img/tandoori-paneer-pizza.jpg"},
-{"id":70,"cat":"PIZZA","name":"माखनी पनीर पिझ्झा (Makhani Paneer Pizza)","price":"₹140","desc":"Buttery paneer pizza","tags":["Veg","Pizza"],"img":"img/makhani-paneer-pizza.jpg"},
-{"id":71,"cat":"PIZZA","name":"सिझवान पनीर पिझ्झा (Schezwan Paneer Pizza)","price":"₹140","desc":"Spicy Schezwan paneer pizza","tags":["Veg","Pizza","Spicy"],"img":"img/schezwan-paneer-pizza.jpg"},
-{"id":72,"cat":"PIZZA","name":"मिक्स वेज डिलाइट पिझ्झा (Mix Veg Delight Pizza)","price":"₹140","desc":"Mixed vegetable delight pizza","tags":["Veg","Pizza"],"img":"img/mix-veg-delight-pizza.jpg"},
-{"id":73,"cat":"PIZZA","name":"चीज बर्स्ट वेज पिझ्झा (Cheese Burst Veg Pizza)","price":"₹140","desc":"Cheese burst vegetable pizza","tags":["Veg","Pizza"],"img":"img/cheese-burst-veg-pizza.jpg"},
-{"id":74,"cat":"PIZZA","name":"डबल चीज बर्स्ट वेज पिझ्झा (Double Cheese Burst Veg Pizza)","price":"₹140","desc":"Double cheese burst vegetable pizza","tags":["Veg","Pizza"],"img":"img/double-cheese-burst-veg-pizza.jpg"},
-{"id":75,"cat":"PIZZA","name":"चटपटा पिझ्झा (Chatpata Pizza)","price":"₹140","desc":"Tangy and spicy pizza","tags":["Veg","Pizza","Spicy"],"img":"img/chatpata-pizza.jpg"},
-{"id":76,"cat":"PIZZA","name":"चिली चीज गार्लिक पिझ्झा (Chilli Cheese Garlic Pizza)","price":"₹140","desc":"Chilli cheese garlic flavored pizza","tags":["Veg","Pizza","Spicy"],"img":"img/chilli-cheese-garlic-pizza.jpg"},
-{"id":77,"cat":"PIZZA","name":"गार्लिक पनीर पिझ्झा (Garlic Paneer Pizza)","price":"₹140","desc":"Garlic flavored paneer pizza","tags":["Veg","Pizza"],"img":"img/garlic-paneer-pizza.jpg"},
-{"id":78,"cat":"PIZZA","name":"चिली चीज पिझ्झा (Chilli Cheese Pizza)","price":"₹140","desc":"Spicy chilli cheese pizza","tags":["Veg","Pizza","Spicy"],"img":"img/chilli-cheese-pizza.jpg"},
-{"id":79,"cat":"PIZZA","name":"इटालियन पिझ्झा (Italian Pizza)","price":"₹140","desc":"Italian style pizza","tags":["Veg","Pizza"],"img":"img/italian-pizza.jpg"},
-
-
-{"id":80,"cat":"MOMOS","name":"वेज चीज मोमोज (Veg Cheese Momos)","price":"₹275","desc":"Steamed veg cheese momos","tags":["Veg","Momos"],"img":"img/veg-cheese-momos.jpg"},
-{"id":81,"cat":"MOMOS","name":"वेज पेरी पेरी मोमोज (Veg Peri Peri Momos)","price":"₹275","desc":"Spicy peri peri veg momos","tags":["Veg","Momos","Spicy"],"img":"img/veg-peri-peri-momos.jpg"},
-{"id":82,"cat":"MOMOS","name":"कॉर्न चीज मोमोज (Corn Cheese Momos)","price":"₹275","desc":"Corn and cheese momos","tags":["Veg","Momos"],"img":"img/corn-cheese-momos.jpg"},
-{"id":83,"cat":"MOMOS","name":"पनीर चीज मोमोज (Paneer Cheese Momos)","price":"₹275","desc":"Paneer and cheese momos","tags":["Veg","Momos"],"img":"img/paneer-cheese-momos.jpg"},
-{"id":84,"cat":"MOMOS","name":"चिकन चीज मोमोज (Chicken Cheese Momos)","price":"₹275","desc":"Chicken cheese momos","tags":["Non-Veg","Momos"],"img":"img/chicken-cheese-momos.jpg"},
-{"id":85,"cat":"PLATTER","name":"आर्या प्लॅटर (Aarya Platter)","price":"₹275","desc":"Special momos platter","tags":["Platter","Momos"],"img":"img/aarya-platter.jpg"},
-
-{"id":86,"cat":"BURGER","name":"आलू टिक्की बर्गर (Aloo Tikki Burger)","price":"₹60","desc":"Potato patty burger","tags":["Veg","Burger"],"img":"img/aloo-tikki-burger.jpg"},
-{"id":87,"cat":"BURGER","name":"स्पायसी चीज बर्गर (Spicy Cheese Burger)","price":"₹70","desc":"Spicy cheese burger","tags":["Veg","Burger","Spicy"],"img":"img/spicy-cheese-burger.jpg"},
-{"id":88,"cat":"BURGER","name":"वेज चीज बर्गर (Veg Cheese Burger)","price":"₹70","desc":"Vegetable cheese burger","tags":["Veg","Burger"],"img":"img/veg-cheese-burger.jpg"},
-{"id":89,"cat":"BURGER","name":"सिझवान बर्गर (Schezwan Burger)","price":"₹70","desc":"Spicy Schezwan burger","tags":["Veg","Burger","Spicy"],"img":"img/schezwan-burger.jpg"},
-{"id":90,"cat":"BURGER","name":"चिकन बर्गर (Chicken Burger)","price":"₹90","desc":"Chicken burger","tags":["Non-Veg","Burger"],"img":"img/chicken-burger.jpg"},
-{"id":91,"cat":"BURGER","name":"वेज डबल चीज बर्गर (Veg Double Cheese Burger)","price":"₹80","desc":"Double cheese veg burger","tags":["Veg","Burger"],"img":"img/veg-double-cheese-burger.jpg"},
-{"id":92,"cat":"BURGER","name":"चिली चीज बर्गर (Chilli Cheese Burger)","price":"₹70","desc":"Chilli cheese burger","tags":["Veg","Burger","Spicy"],"img":"img/chilli-cheese-burger.jpg"},
-{"id":93,"cat":"BURGER","name":"चिकन डबल चीज बर्गर (Chicken Double Cheese Burger)","price":"₹100","desc":"Double cheese chicken burger","tags":["Non-Veg","Burger"],"img":"img/chicken-double-cheese-burger.jpg"},
-{"id":94,"cat":"BURGER","name":"पनीर चीज बर्गर (Paneer Cheese Burger)","price":"₹80","desc":"Paneer cheese burger","tags":["Veg","Burger"],"img":"img/paneer-cheese-burger.jpg"},
-{"id":95,"cat":"BREAD","name":"पनीर गार्लिक ब्रेड (Paneer Garlic Bread)","price":"₹60","desc":"Buttery garlic bread","tags":["Veg","Bread"],"img":"img/Paneer-garlic-bread.jpg"},
   ];
-
     // Cart functionality
     let cart = [];
     const cartButton = document.getElementById('cartButton');
@@ -1312,7 +1334,7 @@
       
       // Encode the message for WhatsApp URL
       const encodedMessage = encodeURIComponent(message);
-      const whatsappURL = `https://wa.me/919922745412?text=${encodedMessage}`;
+      const whatsappURL = `https://wa.me/918767141915?text=${encodedMessage}`;
       
       // Open WhatsApp in a new tab
       window.open(whatsappURL, '_blank');
