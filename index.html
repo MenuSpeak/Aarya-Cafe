@@ -795,23 +795,23 @@
       font-size: 16px;
     }
 
-    /* Table Number Input */
-    .table-number-section {
+    /* Customer Details Section */
+    .customer-details-section {
       margin-bottom: 20px;
-      padding: 16px;
+      padding: 20px;
       background: rgba(255, 255, 255, 0.02);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.03);
     }
-
-    .table-number-label {
+    
+    .customer-details-label {
       display: block;
       margin-bottom: 8px;
       font-weight: 600;
       color: var(--gold2);
     }
-
-    .table-number-input {
+    
+    .customer-details-input {
       width: 100%;
       padding: 12px;
       border-radius: 8px;
@@ -819,11 +819,18 @@
       border: 1px solid rgba(255, 255, 255, 0.05);
       color: white;
       font-size: 16px;
+      margin-bottom: 15px;
     }
-
-    .table-number-input:focus {
+    
+    .customer-details-input:focus {
       outline: none;
       border-color: var(--gold2);
+    }
+    
+    .customer-details-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
     }
 
     /* Print Button */
@@ -914,6 +921,10 @@
       
       .cart-actions {
         flex-direction: row;
+      }
+      
+      .customer-details-grid {
+        grid-template-columns: 1fr 1fr;
       }
     }
 
@@ -1024,10 +1035,23 @@
         <button class="close-cart" id="closeCart">&times;</button>
       </div>
       
-      <!-- Table Number Input Section -->
-      <div class="table-number-section">
-        <label for="tableNumber" class="table-number-label">Enter Table Number</label>
-        <input type="text" id="tableNumber" class="table-number-input" placeholder="e.g., Table 5" />
+      <!-- REPLACED: Customer Details Section -->
+      <div class="customer-details-section">
+        <h4 class="customer-details-label">Customer Details</h4>
+        <div class="customer-details-grid">
+          <div>
+            <label for="customerName" class="customer-details-label">Full Name</label>
+            <input type="text" id="customerName" class="customer-details-input" placeholder="Enter your full name" required />
+          </div>
+          <div>
+            <label for="customerMobile" class="customer-details-label">Mobile Number</label>
+            <input type="tel" id="customerMobile" class="customer-details-input" placeholder="Enter your mobile number" required />
+          </div>
+          <div style="grid-column: 1 / -1">
+            <label for="customerAddress" class="customer-details-label">Delivery Address</label>
+            <textarea id="customerAddress" class="customer-details-input" placeholder="Enter your complete address" rows="3" required></textarea>
+          </div>
+        </div>
       </div>
       
       <div class="cart-items" id="cartItems">
@@ -1202,7 +1226,6 @@
     const cartTotal = document.getElementById('cartTotal');
     const clearCart = document.getElementById('clearCart');
     const whatsappOrder = document.getElementById('whatsappOrder');
-    const tableNumberInput = document.getElementById('tableNumber');
 
     // Toggle cart modal
     cartButton.addEventListener('click', () => {
@@ -1315,20 +1338,27 @@
       updateCart();
     });
 
-    // WhatsApp order function
+    // WhatsApp order function with customer details
     whatsappOrder.addEventListener('click', () => {
       if (cart.length === 0) {
         alert('Your cart is empty!');
         return;
       }
       
-      const tableNumber = tableNumberInput.value.trim();
-      if (!tableNumber) {
-        alert('Please enter your table number');
+      const customerName = document.getElementById('customerName').value.trim();
+      const customerMobile = document.getElementById('customerMobile').value.trim();
+      const customerAddress = document.getElementById('customerAddress').value.trim();
+      
+      if (!customerName || !customerMobile || !customerAddress) {
+        alert('Please fill in all customer details');
         return;
       }
       
-      let message = `Hello! I would like to place an order from Table: ${tableNumber}:\n\n`;
+      let message = `Hello! I would like to place an order:\n\n`;
+      message += `Customer Name: ${customerName}\n`;
+      message += `Mobile: ${customerMobile}\n`;
+      message += `Address: ${customerAddress}\n\n`;
+      message += `Order Details:\n`;
       
       cart.forEach(item => {
         message += `${item.name} - ${item.quantity} x ${item.price}\n`;
