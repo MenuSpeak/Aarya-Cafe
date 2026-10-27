@@ -1240,6 +1240,19 @@
   {"id":131,"cat":"Combo offer","name":"Pizza Lover Combo","price":"₹220","desc":"Veg Pizza + Fries + Mocktail","tags":["Combo"],"img":"img/pizza-combo.jpg"},
   {"id":132,"cat":"Combo offer","name":"Aarya Cafe's Platter Combo Offer","price":"₹350","desc":"Veg Pizza + Fries + Sandwich + Burger + Mocktail","tags":["Combo","Platter"],"img":"img/aarya-spl-platter.jpg"},
 ];
+
+    // ===== ✅ FIX START: Category aliases + case-insensitive filter =====
+    const CAT_ALIASES = {
+      'bread': 'Garlic Bread',
+      'shakes': 'Milkshek',
+      'mocktails': 'Mocktail',
+      'coffie': 'Coffee',
+      'combo': 'Combo offer',
+      'platters': 'Platter',
+      'aarya special nashta': 'Special Nashta'
+    };
+    // ===== ✅ FIX END =====
+
     // Cart functionality
     let cart = [];
     const cartButton = document.getElementById('cartButton');
@@ -1435,14 +1448,25 @@
       `).join('');
     }
 
-    // Filter menu items by category
+    // ===== ✅ FIXED: Filter menu items by category (case-insensitive + alias + tag fallback) =====
     function filterByCategory(category) {
-      if (category === 'all') {
+      if (!category || category.toLowerCase().trim() === 'all') {
         renderMenuItems(data);
-      } else {
-        const filteredItems = data.filter(item => item.cat === category);
-        renderMenuItems(filteredItems);
+        return;
       }
+
+      let q = category.toLowerCase().trim();
+      if (CAT_ALIASES[q]) {
+        q = CAT_ALIASES[q].toLowerCase();
+      }
+
+      const filteredItems = data.filter(item => {
+        const catMatch = item.cat.toLowerCase().trim() === q;
+        const tagMatch = (item.tags || []).some(t => t.toLowerCase().trim() === q);
+        return catMatch || tagMatch;
+      });
+
+      renderMenuItems(filteredItems);
     }
 
     // Search functionality
